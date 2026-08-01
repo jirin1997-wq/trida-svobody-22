@@ -3,18 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Třída Svobody 22 – Pronájem prostor v Olomouci">
-    <meta property="og:description" content="Historický činžovní dům v centru Olomouce. Byt 4+1 (127 m²), sklepy. Dlouhodobý pronájem.">
-    <meta property="og:image" content="https://trida-svobody-22.higgsfield.app/images/hero-facade.png">
+    <meta property="og:title" content="Třída Svobody 22">
+    <meta property="og:description" content="Pronájem prostor v Olomouci">
     <title>Třída Svobody 22</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { width: 100%; height: 100%; overflow: hidden; background: #1A1A1A; }
-        body { font-family: 'Inter', sans-serif; color: #FFFFFF; }
+        body { background: #1A1A1A; color: #fff; font-family: Inter, Arial, sans-serif; }
+        section { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 60px 40px; text-align: center; }
+        h1 { font-size: 56px; font-family: Lora, serif; margin-bottom: 24px; font-weight: 700; }
+        h2 { font-size: 40px; font-family: Lora, serif; margin-bottom: 24px; font-weight: 700; }
+        p { font-size: 18px; line-height: 1.6; max-width: 600px; margin: 0 auto 24px; color: #ccc; }
+        img { max-width: 100%; max-height: 500px; height: auto; margin: 30px 0; border-radius: 8px; }
+        .contact { background: #2A2A2A; }
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            h2 { font-size: 24px; }
+            p { font-size: 16px; }
+        }
     </style>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="module" src="/main.tsx"></script>
+    <section>
+        <h1>TŘÍDA SVOBODY 22</h1>
+        <p>Historický činžovní dům v centru Olomouce</p>
+        <p>Byt 4+1 (127 m²) | 24 000 Kč/měsíc + energie</p>
+        <p>Sklepy k pronájmu</p>
+    </section>
+
+    <section>
+        <h2>VSTUP DO DOMU</h2>
+        <p>Elegantní foyer s historickým nádechem</p>
+        <img src="/public/images/foyer.jpg" alt="foyer" loading="lazy">
+    </section>
+
+    <section>
+        <h2>BYT 4+1</h2>
+        <p>127 m² prostorného elegantního bytu</p>
+        <p>Moderní vybavení + historický šarm</p>
+        <img src="/public/images/apartment.jpg" alt="apartment" loading="lazy">
+    </section>
+
+    <section>
+        <h2>SKLEPY K PRONÁJMU</h2>
+        <p>Historická architektura, bezpečné prostory</p>
+        <img src="/public/images/cellar.jpg" alt="cellar" loading="lazy">
+    </section>
+
+    <section class="contact">
+        <h2>KONTAKTUJ NÁS</h2>
+        <p><strong>Telefon:</strong> +420 732 613 208</p>
+        <p><strong>Email:</strong> jiri.n@outlook.com</p>
+        <p><strong>Adresa:</strong> Třída Svobody 22, Olomouc</p>
+    </section>
 </body>
 </html>
