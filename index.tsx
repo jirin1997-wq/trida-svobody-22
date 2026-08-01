@@ -70,9 +70,9 @@ export default function Home() {
         {SCROLL_SCRUB_SCENES.map((scene, idx) => (
           <section key={idx} className={`${styles.scene} scene-${idx}`} style={{ backgroundColor: scene.bgColor }}>
             <div className={styles.sceneContent}>
-              <h1 style={{ color: BRAND_TOKENS.colors.white }}>{scene.headline}</h1>
-              <p style={{ color: BRAND_TOKENS.colors.gray }}>{scene.description}</p>
-              {scene.content?.image && <img src={scene.content.image} alt={scene.headline} className={styles.sceneImage} />}
+              <h1 style={{ color: BRAND_TOKENS.colors.white }}>{scene.content?.headline}</h1>
+              <p style={{ color: BRAND_TOKENS.colors.gray }}>{scene.content?.description}</p>
+              {scene.content?.image && <img src={scene.content.image} alt={scene.content?.headline} className={styles.sceneImage} />}
             </div>
           </section>
         ))}
