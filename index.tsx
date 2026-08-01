@@ -72,7 +72,7 @@ export default function Home() {
             <div className={styles.sceneContent}>
               <h1 style={{ color: BRAND_TOKENS.colors.white }}>{scene.headline}</h1>
               <p style={{ color: BRAND_TOKENS.colors.gray }}>{scene.description}</p>
-              {scene.imageUrl && <img src={scene.imageUrl} alt={scene.headline} className={styles.sceneImage} />}
+              {scene.content?.image && <img src={scene.content.image} alt={scene.headline} className={styles.sceneImage} />}
             </div>
           </section>
         ))}
